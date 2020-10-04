@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NewsAPI</string>
+    <string name="Name">Источник:Google News</string>
+    <string-array name="catNames">
+        <item>США</item>
+        <item>Китай</item>
+        <item>Россия</item>
+    </string-array>
+</resources>
+
