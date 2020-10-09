@@ -16,7 +16,7 @@ class ItemAdapter(
     private val context: Context,
     private val news: List<ItemOfList>,
     val listener: (ItemOfList) -> Unit
-) : RecyclerView.Adapter<ItemAdapter.ImageViewHolder>() {
+    ) : RecyclerView.Adapter<ItemAdapter.ImageViewHolder>() {
     class ImageViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         val _Name = view.findViewById<TextView>(R.id.Name)

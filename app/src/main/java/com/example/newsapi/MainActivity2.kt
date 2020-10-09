@@ -22,13 +22,6 @@ class MainActivity2 : AppCompatActivity() {
         description.text = item?.description
         Name.text = item?.name
 
-//            var handler = Handler()
-//            handler.postDelayed(object : Runnable {
-//                override fun run() {
-//
-//                }
-//            }, 1000)
-
         Timer().schedule(object : TimerTask() {
             override fun run() {
                 if (imageView.getDrawable() == null) {
