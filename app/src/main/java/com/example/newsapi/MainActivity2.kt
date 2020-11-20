@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
+import android.view.animation.Animation
 import android.widget.Toast
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main2.*
 import java.util.*
@@ -35,6 +37,11 @@ class MainActivity2 : AppCompatActivity() {
             }
         }, 1000)
 
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        Animatoo.animateSlideLeft(this);
     }
 
 }

@@ -14,6 +14,7 @@ import android.widget.AdapterView.OnItemSelectedListener
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 import okhttp3.*
@@ -131,6 +132,7 @@ class MainActivity : AppCompatActivity() {
             var intent = Intent(this@MainActivity, MainActivity2::class.java)
             intent.putExtra("OBJECK", it)
             startActivity(intent)
+            Animatoo.animateSpin(this)
         }
         recycler.adapter = adapter
     }
